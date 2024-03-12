@@ -26,7 +26,7 @@ import com.raywenderlich.android.lab1.router.BackButtonHandler
 import com.raywenderlich.android.lab1.router.FundamentalsRouter
 import com.raywenderlich.android.lab1.router.Screen
 
-private val items = listOf(
+val items = listOf(
     BookCategory(
         R.string.android,
         listOf(
@@ -92,6 +92,7 @@ fun ListItem(bookCategory: BookCategory, modifier: Modifier = Modifier){
             BookImage(items)
         }
     }
+    }
     @Composable
     fun BookImage(imageResource: Int){
         Image(
@@ -101,7 +102,7 @@ fun ListItem(bookCategory: BookCategory, modifier: Modifier = Modifier){
             contentDescription=stringResource(R.string.list)
         )
     }
-}
+
 
 data class BookCategory(
     @StringRes
