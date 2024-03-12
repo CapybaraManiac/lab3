@@ -49,6 +49,7 @@ fun MyScaffold(){
         drawerContent = { MyColumn()}
     )
 }
+@Composable
 fun MyTopAppBar(scaffoldState: ScaffoldState, scope: CoroutineScope){
     val drawerState = scaffoldState.drawerState
 
